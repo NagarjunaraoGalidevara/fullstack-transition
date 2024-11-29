@@ -13,7 +13,7 @@ const Checklist = () => {
 
   const fetchChecklistResults = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/checklist");
+      const response = await axios.get("https://backend-transition-3.onrender.com/checklist");
       setChecklistResults(response.data.results);
       setLoading(false);
     } catch (err) {
